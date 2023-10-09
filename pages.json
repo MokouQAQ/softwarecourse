@@ -1,14 +1,26 @@
 {
-	"pages": [{
+	"pages": [
+		{
 		"path": "pages/index/index",
-		"style": {
+		"style": 
+		{
 			"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+        "path" : "pages/index/time",
+        "style" :                                                                                    
+		{
+		"navigationBarTitleText": "Time",
+            "enablePullDownRefresh": true
+			}	
 		}
-	}],
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationStyle":"custom",
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {
 			"background": "#efeff4"

@@ -29,4 +29,14 @@
 		color: #333;
 		padding: 10px;
 	}
+	@keyframes progross1 {
+	        to {
+	            transform: rotate(360deg);
+	        }
+	    }
+	@keyframes progross2 {
+	        to {
+	            transform: rotate(0deg);
+	        }
+	    }
 </style>

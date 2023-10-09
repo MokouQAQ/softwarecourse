@@ -1,7 +1,7 @@
 <template>
 	<view>
-	<button type="primary"  @click="myclick">an</button>
-		
+		<button type="primary"  @click="myclick">an</button>
+		<button type="primary"  @click="tclick()">time</button>
 	</view>
 </template>
 
@@ -9,12 +9,22 @@
 	export default {
 		data() {
 			return {
-				href: 'https://uniapp.dcloud.io/component/README?id=uniui'
+				href: 'pages/index/time'
 			}
+		},
+		onLoad(){
+			uni.$on('jump1',function(data){
+				
+			})
 		},
 		methods: {
 			myclick(e){
 			console.log('aaa',e)
+			},
+			tclick(){
+				uni.navigateTo({
+					url:'/pages/index/time'
+				})
 			}
 		}
 	}
